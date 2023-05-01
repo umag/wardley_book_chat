@@ -9,7 +9,7 @@ from langchain.vectorstores import FAISS
 
 # Set OpenAI Model and API key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-model = "gpt-4" # Replace with the version of the api you have access
+model = "gpt-3.5-turbo" # Replace with the version of the api you have access
 
 html_temp = """
                 <div style="background-color:{};padding:1px">
@@ -24,7 +24,7 @@ st.sidebar.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html
 st.sidebar.markdown("Developed by Mark Craddock](https://twitter.com/mcraddock)", unsafe_allow_html=True)
 st.sidebar.markdown("Current Version: 0.1.4")
 st.sidebar.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html=True)
-st.sidebar.markdown("Using GPT-4 API")
+st.sidebar.markdown("Using GPT-3 API")
 st.sidebar.markdown("Not optimised")
 st.sidebar.markdown("May run out of OpenAI credits")
 st.sidebar.markdown(html_temp.format("rgba(55, 53, 47, 0.16)"),unsafe_allow_html=True)
